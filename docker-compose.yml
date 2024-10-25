@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   invokeai:
     image: ghcr.io/invoke-ai/invokeai
