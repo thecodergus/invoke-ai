@@ -11,7 +11,8 @@ services:
             - capabilities: [ gpu ]
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
-      - HUGGINGFACE_HUB_TOKEN=${HUGGINGFACE_HUB_TOKEN}
+      - HUGGING_FACE_HUB_TOKEN=${HUGGINGFACE_HUB_TOKEN}
+      - HUGGINGFACE_TOKEN=${HUGGINGFACE_HUB_TOKEN}
     ports:
       - "9090:9090"
     restart: unless-stopped
